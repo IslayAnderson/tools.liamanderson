@@ -1,0 +1,327 @@
+/*
+=============================================================================
+ NORMALIZE (using HTML5 Boilerplate)
+=============================================================================
+*/
+
+/* HTML5 element display
+========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+/* Base
+========================================================================== */
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #222; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+/* Links
+========================================================================== */
+a { color: #555b6e; }
+a:visited { color: #282b34; }
+.grey a { color: #fff; }
+.grey a:visited { color: #909090; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+/* Typography
+========================================================================== */
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* Lists
+========================================================================== */
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+
+/* Embedded content
+========================================================================== */
+img { border: 0; -ms-interpolation-mode: bicubic; }
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Figures
+========================================================================== */
+figure { margin: 0; }
+
+/* Forms
+========================================================================== */
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+label { cursor: pointer; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+/* Tables
+========================================================================== */
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/*
+=============================================================================
+ PRIMARY STYLES
+=============================================================================
+*/
+
+/* 	Colors
+ --------------------------------------------------- */
+	.navy{
+		color:#555b6e;
+	}
+	.navybg{
+		background-color:#555b6e;
+	}
+	.darkteal{
+		color:#89b0ae;
+	}
+	.darktealbg{
+		background-color:#89b0ae;
+	}
+	.lightteal{
+		color:#bee3de;
+	}
+	.lighttealbg{
+		background:#bee3de;
+	}
+	.grey{
+		color:#c7c7c7;
+	}
+	.greybg{
+		background:#c7c7c7;
+	}
+	.beige{
+		color:#ffd6ba;
+	}
+	.beigebg{
+		background:#ffd6ba;
+	}
+
+/* 	Fonts
+ --------------------------------------------------- */
+
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+/* 	Styles
+--------------------------------------------------- */
+
+	.hero{
+		max-height:calc(100vw/3.25);
+		width:100%;
+	}
+	.wA{
+		margin-bottom:155px;
+	}
+	.coverimg{
+		object-fit: cover;
+		object-position: center;
+		width:100%;
+		height:100%;
+	}
+	.avi{
+		width:300px;
+		height:300px;
+		border-radius:50%;
+		margin:0 auto;
+		position:relative;
+		top:-150px;
+		overflow:hidden;
+		box-sizing: border-box;
+		padding:15px;
+	}
+	.avi > .coverimg{
+		    border-radius: 50%;
+	}
+	.avi > a > .coverimg{
+		    border-radius: 50%;
+	}
+	.container{
+		max-width:1900px;
+		width:80%;
+		margin:0 auto;
+		padding-top:25px;
+		padding-bottom:25px;
+		display:table;
+	}
+	.row{
+		display:table-row;
+	}
+	.tc{
+		text-align:center;
+	}
+	.project{
+		width:calc(50% - 15px);
+		box-sizing:border-box;
+		padding:15px;
+		margin-top:15px;
+		margin-bottom:15px;
+    margin-right:15px;
+    float:left;
+	}
+	.pimg{
+		width:100%;
+		overflow:hidden;
+		box-sizing: border-box;
+	}
+	.darknavybg {
+		background-color: #282b34;
+	}
+	footer a {
+		margin-left: 25px;
+		margin-right: 25px;
+		display: inline-block;
+	}
+	.slopet{
+		transform: rotate(180deg);
+    		position: absolute;
+    		width: 79%;
+	}
+	.slopeb{
+		position: relative;
+    		left: 0;
+    		bottom: 15px;
+    		margin-top: -10vw;
+	}
+  .project iframe{
+    height: 30vw;
+    border: none;
+    width: 100%;
+}
+
+/*
+=============================================================================
+ MEDIA QUERIES
+=============================================================================
+*/
+
+@media only screen and (max-width: 320px) {
+
+	/* BASE
+	=================== */
+
+	/* LAYOUT
+	=================== */
+
+	/* MODULE
+	=================== */
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	/* BASE
+	=================== */
+
+	/* LAYOUT
+	=================== */
+
+	/* MODULE
+	=================== */
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	/* BASE
+	=================== */
+
+	/* LAYOUT
+	=================== */
+
+	/* MODULE
+	=================== */
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	/* BASE
+	=================== */
+
+	/* LAYOUT
+	=================== */
+
+	/* MODULE
+	=================== */
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+	.project{
+		width:100%;
+	}
+	.container{
+		width:95%;
+	}
+	.pimg{
+		height:300px;
+	}
+	.slopet{
+		width:94%;
+	}
+  .project iframe{
+    width:100%;
+  }
+
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+/*
+=============================================================================
+ NON-SEMANTIC HELPER CLASSES - Please define your styles before this section.
+=============================================================================
+*/
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

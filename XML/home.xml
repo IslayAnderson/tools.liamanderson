@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+	<useTemplate>true</useTemplate>
+	<template>homepage</template>
+	<usehtml>false</usehtml>
+	<title>Liam Anderson - Tools</title>
+	<description>Liam Anderson Full-Stack Web developer | Essex, Tilbury</description>
+	<contentTitle>Profile, Portfolio and Projects</contentTitle>
+	<content></content>
+	<intro>
+		<![CDATA[
+			<p class="tc grey">Here is a collection of some tools I've built for myself, friends and colleagues. please feel free to look at some of my in development projects on display here, visit my <a href="https://github.com/mranderson64/">GitHub </a>profile.</p>
+		]]>
+	</intro>
+	<panel>
+		<pTitle>google Serps</pTitle>
+		<pURL>https://tools.liamanderson.co.uk/serps</pURL>
+		<pImage>logo-square_w_bg.png</pImage>
+		<pDescription>This Serps tools is an evolution of a tool I built a while back for some colleagues re-built from the ground up.</pDescription>
+	</panel>
+	<panel>
+		<pTitle>Circle Time</pTitle>
+		<pURL>https://tools.liamanderson.co.uk/serps</pURL>
+		<pImage>nurebel.png</pImage>
+		<pDescription>Circle Time is a virtual circle application perfect teachers and parties in an online setting.</pDescription>
+	</panel>
+
+</page>
