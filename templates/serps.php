@@ -9,7 +9,7 @@ $middle = '
 		<input type="text" id="sq" name="sq" value="Search Queries"></input>
 		<input type="text" id="url" name="url" value="liamanderson.co.uk"></input>
 		<input type="text" id="title" name="title" value="Liam Anderson - Profile, Portfolio and Project"></input>
-		<textarea id="description" name="description" value="Liam Anderson Full-Stack Web developer | Lancashire, Lancaster"></textarea>
+		<textarea id="description" name="description" value="Liam Anderson Full-Stack Web developer | Lancashire, Lancaster">Liam Anderson Full-Stack Web developer | Lancashire, Lancaster</textarea>
 		<input type="submit" name="submit" id="submit" value="goooogle.."></input>
 	</form>
 </div>
