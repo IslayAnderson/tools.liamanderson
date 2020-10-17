@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+	<useTemplate>true</useTemplate>
+	<template>serps</template>
+	<usehtml>false</usehtml>
+	<title>Serps preview tool developed by Liam Anderson</title>
+	<description>This is my serps review, visualiser, simulator preview tool that automatically updates daily(GMT+00) with googles own styles</description>
+	<contentTitle></contentTitle>
+	<content></content>
+</page>
