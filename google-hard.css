@@ -1,17 +1,17 @@
-.google{
+.g{
   font-family: arial,sans-serif;
   line-height: 1.2;
   text-align: left;
-  width: 600px;
-  float: right;
+  width: 50%;
+  float: left;
   background: #fff;
   padding: 15px;
   overflow: hidden;
 }
 .form {
-    max-width: 600px;
     display: inline-block;
-    width: 100%;
+    width: 50%;
+    float:left;
 }
 .sim input, textarea {
     display: block;
