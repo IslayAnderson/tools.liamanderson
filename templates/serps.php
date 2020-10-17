@@ -2,6 +2,7 @@
 $top = '<div class="container"><h1 class="tc grey">' . $contentTitle . '</h1>';
 $middle = '
 <link href="' . $host . '/google.css" rel="stylesheet">
+<link href="' . $host . '/google-hard.css" rel="stylesheet">
 <div class="google">
 	<cite>liamanderson.co.uk</cite>
 	<h3>Liam Anderson - Profile, Portfolio and Project</h3>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+	<useTemplate>true</useTemplate>
+	<template>contruction</template>
+	<usehtml>false</usehtml>
+	<title>virtual circle tool developed by Liam Anderson</title>
+	<description>Circle Time is a virtual circle application perfect teachers and parties in an online setting.</description>
+	<contentTitle></contentTitle>
+	<content></content>
+</page>
