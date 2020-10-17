@@ -4,7 +4,7 @@ $urip = $_SERVER['REQUEST_URI'];
 $uri = str_replace("/", "-", $urip);
 #$urib = str_replace("/liam", "", $urip); // liams stupid dev enviroment
 #$uri = str_replace("/", "-", $urib);
-$host = $protocol . $_SERVER['HTTP_HOST'] . $urip;
+$host = $protocol . $_SERVER['HTTP_HOST'];
 if($uri == "" || $uri == "-" || $uri == "-projects-tools-tools.liamanderson-"){
 	$uri = "home";
 }
