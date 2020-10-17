@@ -33,7 +33,7 @@ print("==============================")
 print(scrape)
 print("==============================")
 
-with open("/var/www/vhosts/liamanderson.co.uk/tools.liamandersoon.co.uk/google.css", "w", encoding="utf-8") as file:
+with open("/var/www/vhosts/liamanderson.co.uk/tools.liamanderson.co.uk/google.css", "w", encoding="utf-8") as file:
         file.write(str(scrape[0]))
 
 driver.quit()
