@@ -26,7 +26,7 @@ var replaceSrc = function () {
 };
 replaceSrc();
 window.addEventListener('scroll', replaceSrc, false);
-if(document.title.split('serps') > -1){
+if(document.title.split('Serps') > -1 || document.title.split('serps') > -1 || document.title.split('SERPS') > -1){
 	sq = document.getElementsByName('sq');
 	url = document.getElementsByName('url');
 	title = document.getElementsByName('title');
