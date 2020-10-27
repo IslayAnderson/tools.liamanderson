@@ -26,3 +26,40 @@ var replaceSrc = function () {
 };
 replaceSrc();
 window.addEventListener('scroll', replaceSrc, false);
+if(document.title.split('serps') > -1){
+	sq = document.getElementsByName('sq');
+	url = document.getElementsByName('url');
+	title = document.getElementsByName('title');
+	description = document.getElementsByName('description');
+	submit = document.getElementsByName('submit');
+	pCite = document.querySelector("div.g > div > cite");
+	pH3 = document.querySelector("div.g > div > h3");
+	pP = document.querySelector("div.g > div > p");
+
+	url[0].onkeyup = function(){
+		pCite.innerHTML = url[0].value;
+		if(checkOverflow(pCite)){
+			pCite.style.color = "red";
+		}
+	};
+	title[0].onkeyup = function(){
+		pH3.innerHTML = title[0].value;
+		if(checkOverflow(pH3)){
+			pH3.style.color = "red";
+		}
+	};
+	description[1].onkeyup = function(){
+		pP.innerHTML = description[1].value;
+		if(checkOverflow(pP)){
+			pP.style.color = "red";
+		}
+	};
+}
+
+function checkOverflow(elem) {
+	elem.style.overflow = 'visible';
+	elemHeight = elem.clientHeight;
+	scrollHeight = elem.scrollHeight;
+	elem.style.overflow = 'hidden';
+	return elemHeight < scrollHeight
+}

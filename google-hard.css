@@ -9,6 +9,9 @@
   overflow: hidden;
   margin: 15px;
 }
+.g h3, .g cite, .g p{
+  overflow: hidden;
+}
 .form {
     display: inline-block;
     width: calc(50% - 30px);
