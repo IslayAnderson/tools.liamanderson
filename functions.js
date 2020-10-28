@@ -26,7 +26,11 @@ var replaceSrc = function () {
 };
 replaceSrc();
 window.addEventListener('scroll', replaceSrc, false);
-if(document.title.split('Serps') > -1 || document.title.split('serps') > -1 || document.title.split('SERPS') > -1){
+function serp(el){return document.title.split(el)};
+if(serp('Serps') || serp('serps') || serp('SERPS') || serp('serp') || serp('Serp')){
+	serps();
+}
+function serps(){
 	sq = document.getElementsByName('sq');
 	url = document.getElementsByName('url');
 	title = document.getElementsByName('title');
