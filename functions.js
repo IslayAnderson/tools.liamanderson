@@ -65,5 +65,5 @@ function checkOverflow(elem) {
 	elemHeight = elem.clientHeight;
 	scrollHeight = elem.scrollHeight;
 	elem.style.overflow = 'hidden';
-	return elemHeight < scrollHeight
+	return elemHeight > scrollHeight
 }
